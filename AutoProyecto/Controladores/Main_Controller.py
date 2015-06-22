@@ -18,5 +18,17 @@ class MainController():
         self.Auto.bajarPersonas()
         self.actualizar_Label()
 
+    def handler_bajar_persona5(self):
+        i = 1
+        while i <= 5:
+            i += 1
+            self.handler_bajar_persona()
+
+    def handler_subir_persona5(self):
+        i = 1
+        while i <= 5:
+            i += 1
+            self.handler_subir_persona()
+
     def actualizar_Label(self):
         self.ventana.label.setText(str(self.Auto.cantPersonas))
